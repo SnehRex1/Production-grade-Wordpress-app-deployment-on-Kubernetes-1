@@ -55,9 +55,11 @@ The project includes the following key files and directories:
 
 │ ├── service.yaml
 
-│ ├── pvc.yaml
-
 │ └── ingress.yaml
+
+├── pvs.yaml
+
+├── pvcs.yaml
 
 └── README.md
 
