@@ -30,21 +30,35 @@ Before you begin, ensure you have the following software installed:
 
 The project includes the following key files and directories:
 
-.
-├── mysql
+
+├── MySQL
+
 │ └── Dockerfile
+
 ├── nginx
+
 │ └── Dockerfile
-├── wordpress
+
+├── Wordpress
+
 │ └── Dockerfile
+
 ├── wordpress-chart
+
 │ ├── Chart.yaml
+
 │ ├── values.yaml
+
 │ └── templates
+
 │ ├── deployment.yaml
+
 │ ├── service.yaml
+
 │ ├── pvc.yaml
+
 │ └── ingress.yaml
+
 └── README.md
 
 ## Setup Instructions
@@ -112,11 +126,16 @@ Open the provided URL in your web browser to access your WordPress site.
 The values.yaml file contains configuration values for the Helm chart. You can customize the deployment by modifying this file. Key sections include:
 
 replicaCount: Number of replicas for the deployment.
+
 image: Docker image information.
+
 service: Service type and port configuration.
+
 ingress: Ingress configuration for external access.
+
 resources: Resource requests and limits for the containers.
-deployment.yaml
+
+## deployment.yaml
 Defines the deployment for the WordPress application, including container specifications, probes, and volume mounts.
 
 ## service.yaml
