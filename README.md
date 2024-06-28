@@ -39,6 +39,8 @@ The project includes the following key files and directories:
 
 │ └── Dockerfile
 
+│ └── nginx.config
+
 ├── Wordpress
 
 │ └── Dockerfile
