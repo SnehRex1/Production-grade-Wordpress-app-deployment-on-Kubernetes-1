@@ -138,13 +138,13 @@ ingress: Ingress configuration for external access.
 resources: Resource requests and limits for the containers.
 
 ## deployment.yaml
-Defines the deployment for the WordPress application, including container specifications, probes, and volume mounts.
+The deployment for the WordPress application, including container specifications, probes, and volume mounts.
 
 ## service.yaml
-Defines the services for the WordPress, MySQL, and nginx applications. Adjust the service types and ports as needed.
+The services for the WordPress, MySQL, and nginx applications. 
 
 ## pvc.yaml
-Defines the PersistentVolumeClaims for WordPress and MySQL data storage.
+PersistentVolumeClaims for WordPress and MySQL data storage.
 
 ## Cleanup
 To remove the WordPress deployment and free up resources, run:
