@@ -1,7 +1,6 @@
-# Start with the latest Alpine image
 FROM alpine:latest
 
-# Set OpenResty version
+
 ENV OPENRESTY_VERSION=1.19.9.1
 
 # Install necessary packages and dependencies
@@ -17,7 +16,7 @@ RUN apk add --no-cache \
     perl \
     postgresql-dev
 
-# Download and extract OpenResty
+
 RUN wget https://openresty.org/download/openresty-${OPENRESTY_VERSION}.tar.gz && \
     tar -xzvf openresty-${OPENRESTY_VERSION}.tar.gz && \
     rm openresty-${OPENRESTY_VERSION}.tar.gz && \
