@@ -76,7 +76,15 @@ git clone https://github.com/username/wordpress-project.git
 cd wordpress-project
 ```
 
-## Step 2: Build Docker Images
+### Step 2: Set Up PersistentVolumes and PersistentVolumeClaims
+Create PVs and PVCs with ReadWriteMany access mode.
+
+```
+kubectl apply -f pvs.yaml
+kubectl apply -f pvcs.yaml
+```
+
+## Step 3: Build Docker Images
 Build the required Docker images for WordPress, MySQL, and Nginx.
 
 ```
@@ -92,7 +100,7 @@ docker build -t myrepo/nginx:latest .
 cd ../wordpress
 docker build -t myrepo/wordpress:latest .
 ```
-## Step 3: Push Docker Images to a Repository
+## Step 4: Push Docker Images to a Repository
 Push the Docker images to your repository
 
 ```
@@ -108,7 +116,7 @@ docker push myrepo/nginx:latest
 # Push WordPress image
 docker push myrepo/wordpress:latest
 ```
-## Step 4: Deploy WordPress with Helm
+## Step 5: Deploy WordPress with Helm
 Deploy the WordPress application using Helm:
 
 ```
@@ -116,7 +124,7 @@ helm install my-release ./wordpress-chart
 ```
 This command will install the WordPress release using the Helm chart located in the wordpress-chart directory.
 
-## Step 5: Access the WordPress Application
+## Step 6: Access the WordPress Application
 Get the URL to access the WordPress application:
 
 ```
