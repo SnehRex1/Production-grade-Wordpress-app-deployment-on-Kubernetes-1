@@ -133,6 +133,8 @@ minikube service my-release-wordpress-chart --url
 ```
 Open the provided URL in your web browser to access your WordPress site.
 
+![image](https://github.com/SnehRex1/Production-grade-Wordpress-app-deployment-on-Kubernetes-1/assets/72256546/0a8612e7-bdef-41f6-90b7-c2e102857bd5)
+
 ## Configuration
 
 ## values.yaml
