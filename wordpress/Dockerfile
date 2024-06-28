@@ -1,4 +1,3 @@
-# Start with the official WordPress image
 FROM wordpress:latest
 
 # Copy custom PHP configuration
